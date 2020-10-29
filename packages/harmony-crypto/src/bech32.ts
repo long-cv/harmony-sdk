@@ -4,7 +4,7 @@
  * @hidden
  */
 
-import { isAddress } from '@harmony-js/utils';
+import { isAddress } from '@harmony-js-time/utils';
 
 import { toChecksumAddress } from './keyTool';
 // This code is taken from https://github.com/sipa/bech32/tree/bdc264f84014c234e908d72026b7b780122be11f/ref/javascript
@@ -128,8 +128,8 @@ export const bech32Decode = (bechString: string) => {
 };
 
 // HRP is the human-readable part of Harmony bech32 addresses
-export const HRP = 'one';
-export const tHRP = 'tone';
+export const HRP = 'time';
+export const tHRP = 'ttime';
 
 /**
  * convertBits

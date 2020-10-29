@@ -9,11 +9,11 @@ import {
   WSProvider,
   RPCRequestPayload,
   ResponseMiddleware,
-} from '@harmony-js/network';
+} from '@harmony-js-time/network';
 
-import { ChainID, ChainType, Unit, isBech32Address } from '@harmony-js/utils';
-import { HDNode } from '@harmony-js/account';
-import { fromBech32, HRP } from '@harmony-js/crypto';
+import { ChainID, ChainType, Unit, isBech32Address } from '@harmony-js-time/utils';
+import { HDNode } from '@harmony-js-time/account';
+import { fromBech32, HRP } from '@harmony-js-time/crypto';
 
 const packageInfo = { version: '1.0.0' };
 
@@ -146,12 +146,12 @@ export class TruffleProvider extends HDNode {
       }
       case 'web3_clientVersion': {
         callback(null, {
-          result: `Harmony/${packageInfo.version}/@harmony-js`,
+          result: `Harmony/${packageInfo.version}/@harmony-js-time`,
           id,
           jsonrpc: '2.0',
         });
         return {
-          result: `Harmony/${packageInfo.version}/@harmony-js`,
+          result: `Harmony/${packageInfo.version}/@harmony-js-time`,
           id,
           jsonrpc: '2.0',
         };

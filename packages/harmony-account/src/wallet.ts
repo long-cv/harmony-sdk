@@ -3,11 +3,17 @@
  * @module harmony-account
  */
 
-import { bip39, hdkey, EncryptOptions, getAddress, generatePrivateKey } from '@harmony-js/crypto';
-import { Messenger } from '@harmony-js/network';
-import { isPrivateKey, isAddress, ChainType } from '@harmony-js/utils';
-import { Transaction } from '@harmony-js/transaction';
-import { StakingTransaction } from '@harmony-js/staking';
+import {
+  bip39,
+  hdkey,
+  EncryptOptions,
+  getAddress,
+  generatePrivateKey,
+} from '@harmony-js-time/crypto';
+import { Messenger } from '@harmony-js-time/network';
+import { isPrivateKey, isAddress, ChainType } from '@harmony-js-time/utils';
+import { Transaction } from '@harmony-js-time/transaction';
+import { StakingTransaction } from '@harmony-js-time/staking';
 import { Account } from './account';
 import { defaultMessenger } from './utils';
 
@@ -70,9 +76,9 @@ class Wallet {
   /**
    * @example
    * ```
-   * const { Wallet } = require('@harmony-js/account');
-   * const { HttpProvider, Messenger } = require('@harmony-js/network');
-   * const { ChainType, ChainID } = require('@harmony-js/utils');
+   * const { Wallet } = require('@harmony-js-time/account');
+   * const { HttpProvider, Messenger } = require('@harmony-js-time/network');
+   * const { ChainType, ChainID } = require('@harmony-js-time/utils');
    *
    * // create a custom messenger
    * const customMessenger = new Messenger(

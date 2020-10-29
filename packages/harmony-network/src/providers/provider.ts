@@ -5,7 +5,7 @@
 
 import { HttpProvider } from './http';
 import { WSProvider } from './ws';
-import { defaultConfig, isHttp, isWs } from '@harmony-js/utils';
+import { defaultConfig, isHttp, isWs } from '@harmony-js-time/utils';
 
 export enum ProviderType {
   http = 'http',

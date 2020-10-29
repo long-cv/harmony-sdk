@@ -1,7 +1,7 @@
 /**
  * ## About this package
  *
- * `@harmony-js/contract` makes it easy to interact with smart contract on the Harmony Blockchain. This allows you to interact with smart contracts as if they were JavaScript objects.
+ * `@harmony-js-time/contract` makes it easy to interact with smart contract on the Harmony Blockchain. This allows you to interact with smart contracts as if they were JavaScript objects.
  *
  * ## How to use this package
  *
@@ -30,8 +30,8 @@
  * ### Interact with the contract
  * ```javascript
  * // Step 1: create a harmony instance
- * const { Harmony } = require('@harmony-js/core');
- * const { ChainID, ChainType } = require('@harmony-js/utils');
+ * const { Harmony } = require('@harmony-js-time/core');
+ * const { ChainID, ChainType } = require('@harmony-js-time/utils');
  * const hmy = new Harmony(
  *   // let's assume we deploy smart contract to this end-point URL
  *   'https://api.s0.b.hmny.io'
@@ -65,7 +65,7 @@
  * // Step 0: set up MathWallet extension on Chrome
  *
  * // Step 1: Create a harmonyExtension instance
- * const { Harmony, HarmonyExtension } = require('@harmony-js/core');
+ * const { Harmony, HarmonyExtension } = require('@harmony-js-time/core');
  * let hmyEx, ExContract;
  * export const initExtension = async() => {
  *   hmyEx = await new HarmonyExtension(window.harmony);
@@ -130,8 +130,8 @@ import {
   Arrayish,
   checkNew,
   bytesPadRight,
-} from '@harmony-js/crypto';
-import { hexToBN, defineReadOnly } from '@harmony-js/utils';
+} from '@harmony-js-time/crypto';
+import { hexToBN, defineReadOnly } from '@harmony-js-time/utils';
 
 /** @hidden */
 const NegativeOne: BN = new BN(-1);

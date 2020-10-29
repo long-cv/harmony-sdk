@@ -1,5 +1,5 @@
 {
-  "name": "@harmony-js/utils",
+  "name": "@harmony-js-time/utils",
   "version": "0.1.55",
   "description": "utils for harmony",
   "main": "dist/index.js",

@@ -4,8 +4,8 @@
  * @hidden
  */
 
-import { Messenger } from '@harmony-js/network';
-import { AddressSuffix } from '@harmony-js/utils';
+import { Messenger } from '@harmony-js-time/network';
+import { AddressSuffix } from '@harmony-js-time/utils';
 import { Transaction } from './transaction';
 import { TxParams, TxStatus } from './types';
 import { defaultMessenger } from './utils';

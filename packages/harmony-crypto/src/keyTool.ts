@@ -9,7 +9,7 @@ import * as errors from './errors';
 
 import { keccak256 } from './keccak256';
 import { randomBytes } from './random';
-import { isPrivateKey, strip0x, isAddress, isBech32Address } from '@harmony-js/utils';
+import { isPrivateKey, strip0x, isAddress, isBech32Address } from '@harmony-js-time/utils';
 import { fromBech32 } from './bech32';
 import { encode } from './rlp';
 

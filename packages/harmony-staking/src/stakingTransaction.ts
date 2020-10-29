@@ -15,10 +15,10 @@ import {
   Signature,
   splitSignature,
   stripZeros,
-} from '@harmony-js/crypto';
-import { Messenger, RPCMethod } from '@harmony-js/network';
-import { defaultMessenger, TransactionBase, TxStatus } from '@harmony-js/transaction';
-import { numberToHex, Unit } from '@harmony-js/utils';
+} from '@harmony-js-time/crypto';
+import { Messenger, RPCMethod } from '@harmony-js-time/network';
+import { defaultMessenger, TransactionBase, TxStatus } from '@harmony-js-time/transaction';
+import { numberToHex, Unit } from '@harmony-js-time/utils';
 import { TextEncoder } from 'text-encoding';
 
 /** @hidden */

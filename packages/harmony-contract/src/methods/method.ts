@@ -3,11 +3,11 @@
  * @module harmony-contract
  */
 
-import { Wallet } from '@harmony-js/account';
-import { TransactionFactory, Transaction, TxStatus } from '@harmony-js/transaction';
-import { RPCMethod, getResultForData, Emitter } from '@harmony-js/network';
-import { hexToBN, Unit } from '@harmony-js/utils';
-import { getAddress } from '@harmony-js/crypto';
+import { Wallet } from '@harmony-js-time/account';
+import { TransactionFactory, Transaction, TxStatus } from '@harmony-js-time/transaction';
+import { RPCMethod, getResultForData, Emitter } from '@harmony-js-time/network';
+import { hexToBN, Unit } from '@harmony-js-time/utils';
+import { getAddress } from '@harmony-js-time/crypto';
 import { AbiItemModel } from '../models/types';
 import { Contract } from '../contract';
 import { methodEncoder } from '../utils/encoder';

@@ -1,7 +1,7 @@
 /**
  * ## About this package
  *
- * `@harmony-js/transaction` provides the functions to build transactions
+ * `@harmony-js-time/transaction` provides the functions to build transactions
  *
  * Develop can use this package to:
  * - build a transaction offline!
@@ -11,9 +11,9 @@
  * ## How to use this package
  * ### Step 1: create a Harmony Instance
  * ```javascript
- * const { Harmony } = require('@harmony-js/core');
- * const { ChainID, ChainType } = require('@harmony-js/utils');
- * const { BN } = require('@harmony-js/crypto');
+ * const { Harmony } = require('@harmony-js-time/core');
+ * const { ChainID, ChainType } = require('@harmony-js-time/utils');
+ * const { BN } = require('@harmony-js-time/crypto');
  *
  * const hmy = new Harmony(
  *   'http://localhost:9500',
@@ -84,7 +84,7 @@
  * @module harmony-transaction
  */
 
-import { BN, Signature } from '@harmony-js/crypto';
+import { BN, Signature } from '@harmony-js-time/crypto';
 
 export interface TxParams {
   id: string;

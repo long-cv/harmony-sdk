@@ -4,7 +4,7 @@
  * @hidden
  */
 
-import { ChainType, ChainID, defaultConfig } from '@harmony-js/utils';
+import { ChainType, ChainID, defaultConfig } from '@harmony-js-time/utils';
 import { Harmony } from './harmony';
 
 export interface HarmonyConfig {

@@ -4,7 +4,7 @@
  * @hidden
  */
 
-import { hexlify, isHexString, keccak256, toChecksumAddress } from '@harmony-js/crypto';
+import { hexlify, isHexString, keccak256, toChecksumAddress } from '@harmony-js-time/crypto';
 import {
   numberToHex,
   isArray,
@@ -12,7 +12,7 @@ import {
   isString,
   isAddress,
   hexToBN,
-} from '@harmony-js/utils';
+} from '@harmony-js-time/utils';
 import { toUtf8Bytes } from '../abi/abiCoder';
 
 export const inputLogFormatter = (options: any) => {

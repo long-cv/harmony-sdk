@@ -15,7 +15,7 @@ import {
   Keystore,
   Signature,
   getAddress,
-} from '@harmony-js/crypto';
+} from '@harmony-js-time/crypto';
 
 import {
   isPrivateKey,
@@ -23,10 +23,10 @@ import {
   hexToNumber,
   AddressSuffix,
   ChainType,
-} from '@harmony-js/utils';
-import { Transaction, RLPSign } from '@harmony-js/transaction';
-import { StakingTransaction } from '@harmony-js/staking';
-import { Messenger, RPCMethod } from '@harmony-js/network';
+} from '@harmony-js-time/utils';
+import { Transaction, RLPSign } from '@harmony-js-time/transaction';
+import { StakingTransaction } from '@harmony-js-time/staking';
+import { Messenger, RPCMethod } from '@harmony-js-time/network';
 import { Shards } from './types';
 import { defaultMessenger } from './utils';
 
@@ -141,12 +141,12 @@ class Account {
    * @example
    * ```javascript
    * // import the Account class
-   * const { Account } = require('@harmony-js/account');
+   * const { Account } = require('@harmony-js-time/account');
    *
    * // Messenger is optional, by default, we have a defaultMessenger
    * // If you like to change, you will import related package here.
-   * const { HttpProvider, Messenger } = require('@harmony-js/network');
-   * const { ChainType, ChainID } = require('@harmony-js/utils');
+   * const { HttpProvider, Messenger } = require('@harmony-js-time/network');
+   * const { ChainType, ChainID } = require('@harmony-js-time/utils');
    *
    * // create a custom messenger
    * const customMessenger = new Messenger(

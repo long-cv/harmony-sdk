@@ -4,7 +4,7 @@
  * @hidden
  */
 
-import { hexToNumber, isHex, isAddress, strip0x, ChainType } from '@harmony-js/utils';
+import { hexToNumber, isHex, isAddress, strip0x, ChainType } from '@harmony-js-time/utils';
 import {
   decode,
   encode,
@@ -16,8 +16,8 @@ import {
   Signature,
   getAddress,
   sign,
-} from '@harmony-js/crypto';
-import { HttpProvider, Messenger } from '@harmony-js/network';
+} from '@harmony-js-time/crypto';
+import { HttpProvider, Messenger } from '@harmony-js-time/network';
 import { TxParams } from './types';
 import { Transaction } from './transaction';
 

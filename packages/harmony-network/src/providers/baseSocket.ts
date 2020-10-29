@@ -4,7 +4,7 @@
  * @hidden
  */
 
-import { isWs } from '@harmony-js/utils';
+import { isWs } from '@harmony-js-time/utils';
 import mitt from 'mitt';
 import { BaseProvider } from './baseProvider';
 

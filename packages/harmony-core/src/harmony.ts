@@ -3,14 +3,20 @@
  * @module harmony-core
  */
 
-import * as crypto from '@harmony-js/crypto';
-import * as utils from '@harmony-js/utils';
+import * as crypto from '@harmony-js-time/crypto';
+import * as utils from '@harmony-js-time/utils';
 
-import { Provider, HttpProvider, Messenger, WSProvider, ShardingItem } from '@harmony-js/network';
-import { TransactionFactory, Transaction } from '@harmony-js/transaction';
-import { StakingTransaction, StakingFactory } from '@harmony-js/staking';
-import { ContractFactory, Contract } from '@harmony-js/contract';
-import { Wallet, Account } from '@harmony-js/account';
+import {
+  Provider,
+  HttpProvider,
+  Messenger,
+  WSProvider,
+  ShardingItem,
+} from '@harmony-js-time/network';
+import { TransactionFactory, Transaction } from '@harmony-js-time/transaction';
+import { StakingTransaction, StakingFactory } from '@harmony-js-time/staking';
+import { ContractFactory, Contract } from '@harmony-js-time/contract';
+import { Wallet, Account } from '@harmony-js-time/account';
 import { Blockchain } from './blockchain';
 import { HarmonyConfig } from './util';
 
@@ -59,10 +65,10 @@ export class Harmony extends utils.HarmonyCore {
    * @example
    * ```
    * // import or require Harmony class
-   * const { Harmony } = require('@harmony-js/core');
+   * const { Harmony } = require('@harmony-js-time/core');
    *
    * // import or require settings
-   * const { ChainID, ChainType } = require('@harmony-js/utils');
+   * const { ChainID, ChainType } = require('@harmony-js-time/utils');
    *
    * // Initialize the Harmony instance
    * const hmy = new Harmony(

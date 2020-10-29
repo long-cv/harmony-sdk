@@ -4,10 +4,10 @@
  * @hidden
  */
 
-import { HttpProvider, Messenger } from '@harmony-js/network';
-import { TransactionFactory, Transaction } from '@harmony-js/transaction';
-import { Wallet, Account } from '@harmony-js/account';
-import { ChainType, ChainID } from '@harmony-js/utils';
+import { HttpProvider, Messenger } from '@harmony-js-time/network';
+import { TransactionFactory, Transaction } from '@harmony-js-time/transaction';
+import { Wallet, Account } from '@harmony-js-time/account';
+import { ChainType, ChainID } from '@harmony-js-time/utils';
 import { Blockchain } from './blockchain';
 
 export interface HarmonyModule {

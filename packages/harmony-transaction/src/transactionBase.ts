@@ -4,9 +4,9 @@
  * @hidden
  */
 
-import { BN, getAddress, HarmonyAddress } from '@harmony-js/crypto';
-import { hexToNumber } from '@harmony-js/utils';
-import { Messenger, RPCMethod, Emitter, HttpProvider, NewHeaders } from '@harmony-js/network';
+import { BN, getAddress, HarmonyAddress } from '@harmony-js-time/crypto';
+import { hexToNumber } from '@harmony-js-time/utils';
+import { Messenger, RPCMethod, Emitter, HttpProvider, NewHeaders } from '@harmony-js-time/network';
 import { TxStatus, TransasctionReceipt } from './types';
 import { sleep, TransactionEvents } from './utils';
 import { AbstractTransaction } from './abstractTransaction';

@@ -11,9 +11,9 @@ import {
   stripZeros,
   Signature,
   splitSignature,
-} from '@harmony-js/crypto';
-import { add0xToString, numberToHex, ChainType, Unit } from '@harmony-js/utils';
-import { Messenger, RPCMethod } from '@harmony-js/network';
+} from '@harmony-js-time/crypto';
+import { add0xToString, numberToHex, ChainType, Unit } from '@harmony-js-time/utils';
+import { Messenger, RPCMethod } from '@harmony-js-time/network';
 import { TxParams, TxStatus } from './types';
 import {
   recover,

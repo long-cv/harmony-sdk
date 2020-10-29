@@ -10,14 +10,14 @@ import {
   Provider,
   RPCMethod,
   ShardingItem,
-} from '@harmony-js/network';
+} from '@harmony-js-time/network';
 
-import * as crypto from '@harmony-js/crypto';
-import * as utils from '@harmony-js/utils';
+import * as crypto from '@harmony-js-time/crypto';
+import * as utils from '@harmony-js-time/utils';
 
-import { Transaction, TransactionFactory } from '@harmony-js/transaction';
+import { Transaction, TransactionFactory } from '@harmony-js-time/transaction';
 import { Blockchain } from './blockchain';
-import { ContractFactory } from '@harmony-js/contract';
+import { ContractFactory } from '@harmony-js-time/contract';
 import { HarmonyConfig } from './util';
 
 /** @hidden */

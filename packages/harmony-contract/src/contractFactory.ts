@@ -3,7 +3,7 @@
  * @module harmony-contract
  */
 
-import { Wallet } from '@harmony-js/account';
+import { Wallet } from '@harmony-js-time/account';
 import { Contract } from './contract';
 import { ContractOptions } from './utils/options';
 

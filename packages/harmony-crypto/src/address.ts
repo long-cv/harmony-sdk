@@ -3,7 +3,7 @@
  * @module harmony-crypto
  */
 
-import { isAddress, isBech32Address, isBech32TestNetAddress } from '@harmony-js/utils';
+import { isAddress, isBech32Address, isBech32TestNetAddress } from '@harmony-js-time/utils';
 
 import { toChecksumAddress } from './keyTool';
 import { fromBech32, toBech32, HRP, tHRP } from './bech32';
@@ -13,7 +13,7 @@ import { fromBech32, toBech32, HRP, tHRP } from './bech32';
  *
  * ```
  * // Step 1: import the class
- * const { HarmonyAddress } = require('@harmony-js/crypto');
+ * const { HarmonyAddress } = require('@harmony-js-time/crypto');
  *
  * // Step 2: call functions
  * const addr = 'one103q7qe5t2505lypvltkqtddaef5tzfxwsse4z7'
@@ -175,9 +175,9 @@ export class HarmonyAddress {
  *
  * @example
  * ```javascript
- * const { Harmony } = require('@harmony-js/core');
- * const { ChainID, ChainType } = require('@harmony-js/utils');
- * const { randomBytes } = require('@harmony-js/crypto')
+ * const { Harmony } = require('@harmony-js-time/core');
+ * const { ChainID, ChainType } = require('@harmony-js-time/utils');
+ * const { randomBytes } = require('@harmony-js-time/crypto')
  *
  * const hmy = new Harmony(
  *   'http://localhost:9500',

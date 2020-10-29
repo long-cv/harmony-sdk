@@ -5,8 +5,8 @@
  * @module harmony-transaction
  */
 
-import { getContractAddress, getAddress } from '@harmony-js/crypto';
-import { Messenger } from '@harmony-js/network';
+import { getContractAddress, getAddress } from '@harmony-js-time/crypto';
+import { Messenger } from '@harmony-js-time/network';
 import { Transaction } from './transaction';
 import { ShardingTransaction } from './shardingTransaction';
 import { TxParams, TxStatus } from './types';

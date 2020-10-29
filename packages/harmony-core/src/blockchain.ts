@@ -1,7 +1,7 @@
 /**
  * ## About this package
  *
- * `@harmony-js/core` is collection of modules to guide user to interacte with harmony blockchian.
+ * `@harmony-js-time/core` is collection of modules to guide user to interacte with harmony blockchian.
  *
  * Develops can use this package to:
  * - Create a `harmony` instance
@@ -12,16 +12,16 @@
  *
  * ## How to use `@harmony-core`
  * ### Dependencies
- * - @harmony-js/core
- * - @harmony-js/utils
+ * - @harmony-js-time/core
+ * - @harmony-js-time/utils
  *
  * ### Step 1: Initialize the Harmony instance
  * Before using harmony-core package, you should initialize the Harmony instance
  * ```javascript
  * // import or require Harmony class
- * const { Harmony } = require('@harmony-js/core');
+ * const { Harmony } = require('@harmony-js-time/core');
  * // import or require settings
- * const { ChainID, ChainType } = require('@harmony-js/utils');
+ * const { ChainID, ChainType } = require('@harmony-js-time/utils');
  *
  * // initialize the Harmony instance
  * const hmy = new Harmony(
@@ -92,19 +92,19 @@ import {
   NewHeaders,
   LogSub,
   Syncing,
-} from '@harmony-js/network';
+} from '@harmony-js-time/network';
 
 import {
   assertObject,
   AssertType,
   // HarmonyCore,
   DefaultBlockParams,
-} from '@harmony-js/utils';
+} from '@harmony-js-time/utils';
 
-import { getAddress } from '@harmony-js/crypto';
+import { getAddress } from '@harmony-js-time/crypto';
 
-import { Transaction } from '@harmony-js/transaction';
-import { StakingTransaction } from '@harmony-js/staking';
+import { Transaction } from '@harmony-js-time/transaction';
+import { StakingTransaction } from '@harmony-js-time/staking';
 
 class Blockchain {
   /**

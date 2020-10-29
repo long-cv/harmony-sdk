@@ -3,7 +3,7 @@
  * @module harmony-account
  */
 
-import { bip39, hdkey, getAddress, BN, Signature } from '@harmony-js/crypto';
+import { bip39, hdkey, getAddress, BN, Signature } from '@harmony-js-time/crypto';
 import {
   HDPath,
   // defineReadOnly,
@@ -14,9 +14,9 @@ import {
   Unit,
   isHex,
   hexToNumber,
-} from '@harmony-js/utils';
-import { Messenger, HttpProvider, WSProvider, RPCMethod } from '@harmony-js/network';
-import { Transaction, TxStatus, TransasctionReceipt } from '@harmony-js/transaction';
+} from '@harmony-js-time/utils';
+import { Messenger, HttpProvider, WSProvider, RPCMethod } from '@harmony-js-time/network';
+import { Transaction, TxStatus, TransasctionReceipt } from '@harmony-js-time/transaction';
 import { Account } from './account';
 
 /** @hidden */

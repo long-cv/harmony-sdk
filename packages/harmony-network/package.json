@@ -1,5 +1,5 @@
 {
-  "name": "@harmony-js/network",
+  "name": "@harmony-js-time/network",
   "version": "0.1.55",
   "description": "network suites for harmony",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
   "author": "neeboo@firestack.one",
   "license": "MIT",
   "dependencies": {
-    "@harmony-js/utils": "0.1.55",
+    "@harmony-js-time/utils": "^0.1.55",
     "cross-fetch": "^3.0.2",
     "mitt": "^1.2.0",
     "websocket": "^1.0.28"

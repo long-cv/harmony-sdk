@@ -4,8 +4,8 @@
  * @hidden
  */
 
-import { isObject, isArray } from '@harmony-js/utils';
-import { BN } from '@harmony-js/crypto';
+import { isObject, isArray } from '@harmony-js-time/utils';
+import { BN } from '@harmony-js-time/crypto';
 
 export const jsonInterfaceMethodToString = (json: any): string => {
   if (isObject(json) && json.name && json.name.includes('(')) {

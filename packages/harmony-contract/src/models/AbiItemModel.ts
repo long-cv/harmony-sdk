@@ -4,7 +4,7 @@
  * @hidden
  */
 
-import { isArray } from '@harmony-js/utils';
+import { isArray } from '@harmony-js-time/utils';
 import { AbiItemModel, AbiOutput, AbiInput } from './types';
 
 export class AbiItem {

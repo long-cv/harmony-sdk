@@ -3,7 +3,7 @@
  * @module harmony-contract
  */
 
-import { LogSub } from '@harmony-js/network';
+import { LogSub } from '@harmony-js-time/network';
 import { AbiItemModel } from '../models/types';
 import { Contract } from '../contract';
 import { decode as eventLogDecoder } from '../utils/decoder';

@@ -1,14 +1,14 @@
 /**
  * ## About this package
  *
- * `@harmony-js/network` provides functions to handle messenger, providers and subscriptions...
+ * `@harmony-js-time/network` provides functions to handle messenger, providers and subscriptions...
  *
  * ## How to use this package
  *
  * ### 1. Create a Message
  * ```javascript
- * const { HttpProvider, Messenger } = require('@harmony-js/network');
- * const { ChainType, ChainID } = require('@harmony-js/utils');
+ * const { HttpProvider, Messenger } = require('@harmony-js-time/network');
+ * const { ChainType, ChainID } = require('@harmony-js-time/utils');
  *
  * // create a custom messenger
  * const customMessenger = new Messenger(

@@ -4,9 +4,9 @@
  *
  */
 
-import { Wallet } from '@harmony-js/account';
-import { Messenger } from '@harmony-js/network';
-import { Transaction } from '@harmony-js/transaction';
+import { Wallet } from '@harmony-js-time/account';
+import { Messenger } from '@harmony-js-time/network';
+import { Transaction } from '@harmony-js-time/transaction';
 import { AbiCoder } from './abi/index';
 import { abiMapper } from './utils/mapper';
 import { ContractOptions } from './utils/options';

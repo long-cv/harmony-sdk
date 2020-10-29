@@ -3,7 +3,7 @@
  * @module harmony-network
  */
 
-import { HarmonyCore, ChainType, isString, ChainID, defaultConfig } from '@harmony-js/utils';
+import { HarmonyCore, ChainType, isString, ChainID, defaultConfig } from '@harmony-js-time/utils';
 import { JsonRpc } from '../rpcMethod/builder';
 import { ResponseMiddleware } from './responseMiddleware';
 import { HttpProvider } from '../providers/http';
@@ -24,8 +24,8 @@ export interface ShardingProvider {
  * ## How to Create a Massage
  * @example
  * ```
- * const { HttpProvider, Messenger } = require('@harmony-js/network');
- * const { ChainType, ChainID } = require('@harmony-js/utils');
+ * const { HttpProvider, Messenger } = require('@harmony-js-time/network');
+ * const { ChainType, ChainID } = require('@harmony-js-time/utils');
  *
  * // create a custom messenger
  * const customMessenger = new Messenger(

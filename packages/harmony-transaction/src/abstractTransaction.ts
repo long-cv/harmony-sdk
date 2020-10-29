@@ -4,7 +4,7 @@
  * @hidden
  */
 
-import { Messenger } from '@harmony-js/network';
+import { Messenger } from '@harmony-js-time/network';
 import { TxStatus } from './types';
 
 export abstract class AbstractTransaction {

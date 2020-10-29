@@ -3,8 +3,8 @@
  * @module harmony-staking
  */
 
-import { Messenger } from '@harmony-js/network';
-import { Signature } from '@harmony-js/crypto';
+import { Messenger } from '@harmony-js-time/network';
+import { Signature } from '@harmony-js-time/crypto';
 
 import {
   Directive,
@@ -18,8 +18,8 @@ import {
   Decimal,
   StakingTransaction,
 } from './stakingTransaction';
-import { Unit } from '@harmony-js/utils';
-import { TxStatus } from '@harmony-js/transaction';
+import { Unit } from '@harmony-js-time/utils';
+import { TxStatus } from '@harmony-js-time/transaction';
 
 /** @hidden */
 export interface DescriptionInterface {

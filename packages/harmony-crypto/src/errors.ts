@@ -1,14 +1,14 @@
 /**
  * ## About this package
  *
- * `@harmony-js/crypot` provides a series of functions to deal with keys
+ * `@harmony-js-time/crypot` provides a series of functions to deal with keys
  *
  * ## How to use this package
  *
  * ### Create a Harmony Instance
  * ```javascript
- * const { Harmony } = require('@harmony-js/core');
- * const { ChainID, ChainType } = require('@harmony-js/utils');
+ * const { Harmony } = require('@harmony-js-time/core');
+ * const { ChainID, ChainType } = require('@harmony-js-time/utils');
  *
  * const hmy = new Harmony(
  *   'http://localhost:9500',

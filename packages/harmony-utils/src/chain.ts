@@ -1,7 +1,7 @@
 /**
  * ## About this package
  *
- * `@harmony-js/util` provides utility functions for Harmony dapps and other `harmony-js` packages
+ * `@harmony-js-time/util` provides utility functions for Harmony dapps and other `harmony-js` packages
  *
  * Develop can use this package to:
  * - Transform the unit of token (fromWei, toWei...)
@@ -12,9 +12,9 @@
  *
  * ### Step 1: create a Harmony Instance
  * ```javascript
- * const { Harmony } = require('@harmony-js/core');
- * const { ChainID, ChainType } = require('@harmony-js/utils');
- * const { BN } = require('@harmony-js/crypto');
+ * const { Harmony } = require('@harmony-js-time/core');
+ * const { ChainID, ChainType } = require('@harmony-js-time/utils');
+ * const { BN } = require('@harmony-js-time/crypto');
  *
  * const hmy = new Harmony(
  *   'http://localhost:9500',
