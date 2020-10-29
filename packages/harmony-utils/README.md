@@ -1,18 +1,18 @@
-# @harmony-js/utils
+# @harmony-js-time/utils
 
 This package provides a collection of utility apis for unit conversions like `fromWei`, `toWei`, `hexToNumber`, `numberToHex`, `isAddress`, etc.
 
 ## Installation
 
 ```
-npm install @harmony-js/utils
+npm install @harmony-js-time/utils
 ```
 
 ## Usage
 
 Available units
 ```
-const { Units } = require('@harmony-js/utils');
+const { Units } = require('@harmony-js-time/utils');
 
 [Units.wei, '1'], // 1 wei
 [Units.Kwei, '1000'], // 1e3 wei
@@ -30,8 +30,8 @@ const { Units } = require('@harmony-js/utils');
 
 Converting between different units
 ```javascript
-const { Units, Unit, numberToString, add0xToString, fromWei, toWei, numToStr} = require('@harmony-js/utils');
-const { BN } = require('@harmony-js/crypto');
+const { Units, Unit, numberToString, add0xToString, fromWei, toWei, numToStr} = require('@harmony-js-time/utils');
+const { BN } = require('@harmony-js-time/crypto');
 
 const one = new Unit('1').asOne();
 const oneToGwei = one.toGwei();

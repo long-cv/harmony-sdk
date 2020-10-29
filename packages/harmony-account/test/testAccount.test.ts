@@ -5,8 +5,8 @@
  */
 
 import { Account } from '../src/account';
-import { HttpProvider, Messenger } from '@harmony-js/network';
-import { ChainType, ChainID } from '@harmony-js/utils';
+import { HttpProvider, Messenger } from '@harmony-js-time/network';
+import { ChainType, ChainID } from '@harmony-js-time/utils';
 
 const provider = new HttpProvider('http://localhost:9500');
 const messenger = new Messenger(provider, ChainType.Harmony, ChainID.HmyLocal);

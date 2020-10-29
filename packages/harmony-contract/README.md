@@ -1,21 +1,21 @@
-# @harmony-js/contract
+# @harmony-js-time/contract
 
 This package provides a collection of apis to create, deploy, and interact with smart contracts. In Harmony, smart contracts all fully EVM compatible and the formats and terminologies match 1-to-1 with EVM smart contracts.
 
 ## Installation
 
 ```
-npm install @harmony-js/contract
+npm install @harmony-js-time/contract
 ```
 
 ## Usage
 
 Deploying a contract using `contractConstructor`
 ```javascript
-const { ContractFactory } = require('@harmony-js/contract');
-const { Wallet } = require('@harmony-js/account');
-const { Messenger, HttpProvider } = require('@harmony-js/network');
-const { ChainID, ChainType, hexToNumber } = require('@harmony-js/utils');
+const { ContractFactory } = require('@harmony-js-time/contract');
+const { Wallet } = require('@harmony-js-time/account');
+const { Messenger, HttpProvider } = require('@harmony-js-time/network');
+const { ChainID, ChainType, hexToNumber } = require('@harmony-js-time/utils');
 
 const wallet = new Wallet(
   new Messenger(
@@ -47,8 +47,8 @@ Instead of `contract.methods.contractConstructor`, `contract.deploy` could be us
 
 Loading a contract object using the contract json and contract address for interacting with it
 ```javascript
-const { Harmony } = require("@harmony-js/core");
-const { ChainID, ChainType } = require("@harmony-js/utils");
+const { Harmony } = require("@harmony-js-time/core");
+const { ChainID, ChainType } = require("@harmony-js-time/utils");
 const hmy = new Harmony("https://api.s0.b.hmny.io", {
   chainType: ChainType.Harmony,
   chainId: ChainID.HmyTestnet,
@@ -63,10 +63,10 @@ console.log(contract.methods);
 
 Directly loading contract using `ContractFactory`
 ```javascript
-const { ContractFactory } = require('@harmony-js/contract');
-const { Wallet } = require('@harmony-js/account');
-const { Messenger, HttpProvider } = require('@harmony-js/network');
-const { ChainID, ChainType, hexToNumber } = require('@harmony-js/utils');
+const { ContractFactory } = require('@harmony-js-time/contract');
+const { Wallet } = require('@harmony-js-time/account');
+const { Messenger, HttpProvider } = require('@harmony-js-time/network');
+const { ChainID, ChainType, hexToNumber } = require('@harmony-js-time/utils');
 
 const wallet = new Wallet(new Messenger(
   new HttpProvider('https://api.s0.b.hmny.io'),
@@ -118,10 +118,10 @@ All the above apis can also be asynchronously executed using `async` and `await`
 
 Subscribing to the contract events requires web socket based messenger.
 ```javascript
-const { ContractFactory } = require('@harmony-js/contract');
-const { Wallet } = require('@harmony-js/account');
-const { Messenger, WSProvider } = require('@harmony-js/network');
-const { ChainID, ChainType, hexToNumber } = require('@harmony-js/utils');
+const { ContractFactory } = require('@harmony-js-time/contract');
+const { Wallet } = require('@harmony-js-time/account');
+const { Messenger, WSProvider } = require('@harmony-js-time/network');
+const { ChainID, ChainType, hexToNumber } = require('@harmony-js-time/utils');
 const ws = new WSProvider('wss://ws.s0.b.hmny.io');
 
 const wallet = new Wallet(

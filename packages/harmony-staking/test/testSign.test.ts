@@ -4,10 +4,10 @@
  * @ignore
  */
 
-import { Wallet } from '@harmony-js/account';
-import { getAddressFromPrivateKey } from '@harmony-js/crypto';
-import { HttpProvider, Messenger } from '@harmony-js/network';
-import { ChainID, ChainType, isValidAddress } from '@harmony-js/utils';
+import { Wallet } from '@harmony-js-time/account';
+import { getAddressFromPrivateKey } from '@harmony-js-time/crypto';
+import { HttpProvider, Messenger } from '@harmony-js-time/network';
+import { ChainID, ChainType, isValidAddress } from '@harmony-js-time/utils';
 // tslint:disable-next-line: no-implicit-dependencies
 import fetch from 'jest-fetch-mock';
 

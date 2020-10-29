@@ -1,7 +1,7 @@
 /** 
 ## About This Package
 
-`@harmony-js/account` is dealing with account related features.
+`@harmony-js-time/account` is dealing with account related features.
 
 Developers can use this package to:
 - Create `Account` instance
@@ -19,22 +19,22 @@ There are 2 main classes in this package, `Account` and `Wallet`.
 ## Usage of Account
 
 ### Dependencies
-  - @harmony-js/network
-  - @harmony-js/staking
-  - @harmony-js/transaction
-  - @harmony-js/utils
+  - @harmony-js-time/network
+  - @harmony-js-time/staking
+  - @harmony-js-time/transaction
+  - @harmony-js-time/utils
 
 ### Examples
 
 Create a random account
 ```javascript
     // import the Account class
-    import {Account} from '@harmony-js/account'
+    import {Account} from '@harmony-js-time/account'
 
     // Messenger is optional, by default, we have a defaultMessenger 
     // If you like to change, you will import related package here.
-    import { HttpProvider, Messenger } from '@harmony-js/network';
-    import { ChainType, ChainID } from '@harmony-js/utils';
+    import { HttpProvider, Messenger } from '@harmony-js-time/network';
+    import { ChainType, ChainID } from '@harmony-js-time/utils';
 
     // create a custom messenger
     const customMessenger = new Messenger(
@@ -67,7 +67,7 @@ Create a random account
 ```typescript
 
     // import the Account class
-    import {Account} from '@harmony-js/account'
+    import {Account} from '@harmony-js-time/account'
 
     // NOTED: Key with or without `0x` are accepted, makes no different
     // NOTED: DO NOT import `mnemonic phrase` using `Account` class, use `Wallet` instead
@@ -87,7 +87,7 @@ Create a random account
 ```typescript
 
     // import the Account class
-    import {Account} from '@harmony-js/account'
+    import {Account} from '@harmony-js-time/account'
     
     // suppose we have an account
     const myPrivateKey = '0xe19d05c5452598e24caad4a0d85a49146f7be089515c905ae6a19e8a578a6930'
@@ -142,7 +142,7 @@ Create a random account
 ```typescript
 
     // import the Account class
-    import {Account} from '@harmony-js/account'
+    import {Account} from '@harmony-js-time/account'
     
     // suppose we have an account
     const myPrivateKey = '0xe19d05c5452598e24caad4a0d85a49146f7be089515c905ae6a19e8a578a6930'
@@ -165,15 +165,15 @@ Create a random account
 ```typescript
 
     // import the Account class
-    import {Account} from '@harmony-js/account'
+    import {Account} from '@harmony-js-time/account'
 
-    // import Transaction class from '@harmony-js/transaction'
-    import {Transaction} from '@harmony-js/transaction'
+    // import Transaction class from '@harmony-js-time/transaction'
+    import {Transaction} from '@harmony-js-time/transaction'
     
      // Messenger is optional, by default, we have a defaultMessenger 
     // If you like to change, you will import related package here.
-    import { HttpProvider, Messenger } from '@harmony-js/network';
-    import { ChainType, ChainID, Unit } from '@harmony-js/utils';
+    import { HttpProvider, Messenger } from '@harmony-js-time/network';
+    import { ChainType, ChainID, Unit } from '@harmony-js-time/utils';
 
     // create a custom messenger
     const customMessenger = new Messenger(
@@ -226,15 +226,15 @@ Create a random account
 ## Usage of Wallet
 
 ### Dependencies
-  - @harmony-js/crypto
-  - @harmony-js/network
-  - @harmony-js/staking
-  - @harmony-js/transaction
-  - @harmony-js/utils
+  - @harmony-js-time/crypto
+  - @harmony-js-time/network
+  - @harmony-js-time/staking
+  - @harmony-js-time/transaction
+  - @harmony-js-time/utils
 
 ```typescript
     // constructor
-    const { Wallet } = require('@harmony-js/account');
+    const { Wallet } = require('@harmony-js-time/account');
     const wallet = new Wallet(customMessenger);
 
     // get signer

@@ -4,7 +4,7 @@
  * @ignore
  */
 
-import { BN } from '@harmony-js/crypto';
+import { BN } from '@harmony-js-time/crypto';
 import * as transformers from '../src/transformers';
 
 describe('test transformers', () => {

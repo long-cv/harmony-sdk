@@ -6,10 +6,10 @@
 
 import { TransactionFactory, Transaction, TxStatus } from '../src';
 // tslint:disable-next-line: no-implicit-dependencies
-import { Wallet } from '@harmony-js/account';
-import { HttpProvider, Messenger } from '@harmony-js/network';
-import { ChainType, ChainID } from '@harmony-js/utils';
-import { toChecksumAddress, randomBytes } from '@harmony-js/crypto';
+import { Wallet } from '@harmony-js-time/account';
+import { HttpProvider, Messenger } from '@harmony-js-time/network';
+import { ChainType, ChainID } from '@harmony-js-time/utils';
+import { toChecksumAddress, randomBytes } from '@harmony-js-time/crypto';
 // tslint:disable-next-line: no-implicit-dependencies
 import fetch from 'jest-fetch-mock';
 

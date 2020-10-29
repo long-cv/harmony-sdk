@@ -6,7 +6,7 @@
 // tslint:disable-next-line: no-implicit-dependencies
 import fetch from 'jest-fetch-mock';
 import { Blockchain } from '../src/blockchain';
-import { HttpProvider, Messenger } from '@harmony-js/network';
+import { HttpProvider, Messenger } from '@harmony-js-time/network';
 
 const provider = new HttpProvider('https://mock.com');
 const messenger = new Messenger(provider);

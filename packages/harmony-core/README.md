@@ -1,11 +1,11 @@
-# @harmony-js/core
+# @harmony-js-time/core
 
 This package provides a collection of apis to interact with Harmony blockchain.
 
 ## Installation
 
 ```
-npm install @harmony-js/core
+npm install @harmony-js-time/core
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install @harmony-js/core
 Create a Harmony instance connecting to testnet
 
 ```javascript
-const { Harmony } = require('@harmony-js/core');
+const { Harmony } = require('@harmony-js-time/core');
 const {
   ChainID,
   ChainType,
@@ -22,7 +22,7 @@ const {
   fromWei,
   Units,
   Unit,
-} = require('@harmony-js/utils');
+} = require('@harmony-js-time/utils');
 
 const hmy = new Harmony(
     'https://api.s0.b.hmny.io/',

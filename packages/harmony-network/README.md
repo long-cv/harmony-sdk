@@ -1,18 +1,18 @@
-# @harmony-js/network
+# @harmony-js-time/network
 
 This package provides a collection of apis to create messengers (HTTP, WebSocket) to connect to blockchain networks.
 
 ## Installation
 
 ```
-npm install @harmony-js/network
+npm install @harmony-js-time/network
 ```
 
 ## Usage
 
 ```javascript
-const { Messenger, HttpProvider, WSProvider } = require('@harmony-js/network');
-const { ChainID, ChainType } = require('@harmony-js/utils');
+const { Messenger, HttpProvider, WSProvider } = require('@harmony-js-time/network');
+const { ChainID, ChainType } = require('@harmony-js-time/utils');
 const testnetHTTP = 'https://api.s0.b.hmny.io';
 const testnetWS = 'wss://ws.s0.b.hmny.io';
 const localHTTP = 'http://localhost:9500/';

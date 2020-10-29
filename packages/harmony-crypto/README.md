@@ -1,11 +1,11 @@
-# @harmony-js/crypto
+# @harmony-js-time/crypto
 
 This package provides a collection of apis related to address management, kestore, encoding, and encrypt/decrypt.
 
 ## Installation
 
 ```
-npm install @harmony-js/crypto
+npm install @harmony-js-time/crypto
 ```
 
 ## Usage
@@ -24,8 +24,8 @@ const {
   getAddressFromPrivateKey,
   encryptPhrase,
   decryptPhrase
-} = require('@harmony-js/crypto');
-const { isPrivateKey, isAddress, isPublicKey } = require('@harmony-js/utils');
+} = require('@harmony-js-time/crypto');
+const { isPrivateKey, isAddress, isPublicKey } = require('@harmony-js-time/utils');
 ```
 
 Address apis
@@ -61,7 +61,7 @@ console.log(isAddress(addrPrv));
 
 Encrypt/decrypt apis
 ```javascript
-const { Wallet } = require('@harmony-js/account');
+const { Wallet } = require('@harmony-js-time/account');
 
 const myPhrase = new Wallet().newMnemonic();
 console.log(myPhrase);

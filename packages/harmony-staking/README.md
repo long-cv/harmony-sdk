@@ -1,11 +1,11 @@
-# @harmony-js/staking
+# @harmony-js-time/staking
 
 This package provides a collection of apis to create, sign/send staking transaction, and receive confirm/receipt.
 
 ## Installation
 
 ```
-npm install @harmony-js/staking
+npm install @harmony-js-time/staking
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install @harmony-js/staking
 Create a Harmony instance connecting to testnet
 
 ```javascript
-const { Harmony } = require('@harmony-js/core');
+const { Harmony } = require('@harmony-js-time/core');
 const {
   ChainID,
   ChainType,
@@ -22,7 +22,7 @@ const {
   fromWei,
   Units,
   Unit,
-} = require('@harmony-js/utils');
+} = require('@harmony-js-time/utils');
 
 const hmy = new Harmony(
     'https://api.s0.b.hmny.io/',

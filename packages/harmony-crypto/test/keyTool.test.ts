@@ -4,7 +4,7 @@
  */
 
 import * as keys from '../src/keyTool';
-import { isPrivateKey, isAddress, isPublicKey } from '@harmony-js/utils';
+import { isPrivateKey, isAddress, isPublicKey } from '@harmony-js-time/utils';
 
 describe('test keyTools', () => {
   it('test keygen', () => {

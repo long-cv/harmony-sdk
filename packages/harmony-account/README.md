@@ -1,11 +1,11 @@
-# @harmony-js/account
+# @harmony-js-time/account
 
 This package provides a collection of apis to create accounts and wallets and sign using them. A wallet can hold multiple accounts and account is associated with a unique `one` address. This package also provides facilies to manage account keys.
 
 ## Installation
 
 ```
-npm install @harmony-js/account
+npm install @harmony-js-time/account
 ```
 
 ## Usage
@@ -92,8 +92,8 @@ const account = new Account(
     ChainID.HmyTestnet,
   ),
 );
-const { TransactionFactory } = require('@harmony-js/transaction');
-const { Unit } = require('@harmony-js/utils');
+const { TransactionFactory } = require('@harmony-js-time/transaction');
+const { Unit } = require('@harmony-js-time/utils');
 const factory = new TransactionFactory();
 
 const txn = factory.newTx({
@@ -120,7 +120,7 @@ A wallet represents user wallet that can hold one or more user accounts.
 
 Creating an empty wallet
 ```javascript
-const { Wallet } = require('@harmony-js/account')
+const { Wallet } = require('@harmony-js-time/account')
 const wallet = new Wallet();
 ```
 

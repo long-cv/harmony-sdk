@@ -7,9 +7,9 @@
 import { Transaction } from '../src/transaction';
 import { RLPSign } from '../src/utils';
 import { TxStatus } from '../src/types';
-import { HttpProvider, Messenger } from '@harmony-js/network';
-import { isAddress, ChainType, hexToBN, ChainID, isValidAddress } from '@harmony-js/utils';
-import { getAddressFromPrivateKey, getAddress } from '@harmony-js/crypto';
+import { HttpProvider, Messenger } from '@harmony-js-time/network';
+import { isAddress, ChainType, hexToBN, ChainID, isValidAddress } from '@harmony-js-time/utils';
+import { getAddressFromPrivateKey, getAddress } from '@harmony-js-time/crypto';
 
 import txnVectors from './transactions.fixture.json';
 import reTxnVectors from './transactions.remake.fixture.json';
