@@ -1,6 +1,6 @@
 {
   "name": "@harmony-js-time/staking",
-  "version": "0.1.55",
+  "version": "0.1.56",
   "description": "staking transaction package for harmony",
   "main": "dist/index.js",
   "node": "dist/index.js",
@@ -18,10 +18,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@harmony-js-time/crypto": "^0.1.55",
-    "@harmony-js-time/network": "^0.1.55",
-    "@harmony-js-time/transaction": "^0.1.55",
-    "@harmony-js-time/utils": "^0.1.55",
+    "@harmony-js-time/crypto": "0.1.56",
+    "@harmony-js-time/network": "0.1.56",
+    "@harmony-js-time/transaction": "0.1.56",
+    "@harmony-js-time/utils": "0.1.56",
     "text-encoding": "^0.7.0"
   },
   "gitHead": "56606e9365721729a490c27d6a294e0daf90fbdf"
