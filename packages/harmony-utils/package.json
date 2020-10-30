@@ -1,6 +1,6 @@
 {
   "name": "@harmony-js-time/utils",
-  "version": "0.1.58",
+  "version": "0.1.59-alpha.3+6764d3c",
   "description": "utils for harmony",
   "main": "dist/index.js",
   "node": "dist/index.js",
@@ -21,5 +21,5 @@
     "@types/bn.js": "^4.11.3",
     "bn.js": "^4.11.8"
   },
-  "gitHead": "56606e9365721729a490c27d6a294e0daf90fbdf"
+  "gitHead": "6764d3cb0a016e8a85ea655f9522beb212f242ae"
 }

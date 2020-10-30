@@ -1062,6 +1062,97 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@harmony-js-time/account@0.1.58":
+  version "0.1.58"
+  resolved "https://registry.npmjs.org/@harmony-js-time/account/-/account-0.1.58.tgz#406bb46feb04a074396f8282a62eaff849caabe8"
+  integrity sha512-XgC7NhcrEXPzgkl8VQCB7CYICoPAIYF/lrRdCFd9Q3O9zZCYZ8awtQvVmyC1nC7YNoCgZAnz0Y434OaQhFkgdg==
+  dependencies:
+    "@harmony-js-time/core" "0.1.58"
+    "@harmony-js-time/crypto" "0.1.58"
+    "@harmony-js-time/network" "0.1.58"
+    "@harmony-js-time/staking" "0.1.58"
+    "@harmony-js-time/transaction" "0.1.58"
+    "@harmony-js-time/utils" "0.1.58"
+
+"@harmony-js-time/contract@0.1.58":
+  version "0.1.58"
+  resolved "https://registry.npmjs.org/@harmony-js-time/contract/-/contract-0.1.58.tgz#6b4a266519e7df81079fdf38755f8d1a9e25259e"
+  integrity sha512-zRjbVWYnn39abeqzmOhD8Fzp7A9AMB4Xs4/xFzeaNZ4WUZCetl1tR4pCmx91KNA6ZJiihgdbCjGP/kRIhqvSbg==
+  dependencies:
+    "@harmony-js-time/account" "0.1.58"
+    "@harmony-js-time/crypto" "0.1.58"
+    "@harmony-js-time/network" "0.1.58"
+    "@harmony-js-time/transaction" "0.1.58"
+    "@harmony-js-time/utils" "0.1.58"
+
+"@harmony-js-time/core@0.1.58", "@harmony-js-time/core@^0.1.57":
+  version "0.1.58"
+  resolved "https://registry.npmjs.org/@harmony-js-time/core/-/core-0.1.58.tgz#a8712017c909046eee17139118fa3d173fe65eb5"
+  integrity sha512-G/3m8P+jS7GhK5tFln1SVy+G4tojVDunyXrzm7GUcY8d5Kdsp4bLDDatTDQy7xQANDKrgyQ2Z1YaXpjPMwNF9Q==
+  dependencies:
+    "@harmony-js-time/account" "0.1.58"
+    "@harmony-js-time/contract" "0.1.58"
+    "@harmony-js-time/crypto" "0.1.58"
+    "@harmony-js-time/network" "0.1.58"
+    "@harmony-js-time/staking" "0.1.58"
+    "@harmony-js-time/transaction" "0.1.58"
+    "@harmony-js-time/utils" "0.1.58"
+
+"@harmony-js-time/crypto@0.1.58":
+  version "0.1.58"
+  resolved "https://registry.npmjs.org/@harmony-js-time/crypto/-/crypto-0.1.58.tgz#2f9684a89e25fbf669c58fae99315d1e9a633153"
+  integrity sha512-m9I5K0RvBTpjs89MInxW37+4/xZlTSlrjj0uviZrdBk8koWJ4wXdzHpa1AC/2BFp9TWWJ6Rm93j2BTRsjwabog==
+  dependencies:
+    "@harmony-js-time/utils" "0.1.58"
+    aes-js "^3.1.2"
+    bip39 "^2.5.0"
+    bn.js "^4.11.8"
+    elliptic "^6.4.1"
+    hdkey "^1.1.1"
+    hmac-drbg "^1.0.1"
+    js-sha3 "^0.8.0"
+    pbkdf2 "^3.0.17"
+    scrypt-shim "github:web3-js/scrypt-shim"
+    uuid "^3.3.2"
+
+"@harmony-js-time/network@0.1.58":
+  version "0.1.58"
+  resolved "https://registry.npmjs.org/@harmony-js-time/network/-/network-0.1.58.tgz#cfffba8cafdaa3c13c37ca7828311048ea91a72b"
+  integrity sha512-u8KBfGcZSmWBS/nz7H53iYnIQ/YivK5lwylaF8zG93IkTs9desyCOP0R87SFZxg1DuGRLzkwCHz7JzjYwWt6EQ==
+  dependencies:
+    "@harmony-js-time/utils" "0.1.58"
+    cross-fetch "^3.0.2"
+    mitt "^1.2.0"
+    websocket "^1.0.28"
+
+"@harmony-js-time/staking@0.1.58":
+  version "0.1.58"
+  resolved "https://registry.npmjs.org/@harmony-js-time/staking/-/staking-0.1.58.tgz#8fa030c6cac29d853c1e644249e7286280b22168"
+  integrity sha512-W2/gq/yhEEysbKEqqgmmRju2iMfkqMHKwNvmRDipyYQUF3bDSNQK+vZ4fzYrdiiYXrqUidXqRwDnjyrKbODKwg==
+  dependencies:
+    "@harmony-js-time/crypto" "0.1.58"
+    "@harmony-js-time/network" "0.1.58"
+    "@harmony-js-time/transaction" "0.1.58"
+    "@harmony-js-time/utils" "0.1.58"
+    text-encoding "^0.7.0"
+
+"@harmony-js-time/transaction@0.1.58":
+  version "0.1.58"
+  resolved "https://registry.npmjs.org/@harmony-js-time/transaction/-/transaction-0.1.58.tgz#735f8a710b579010843fc843bab428c0f87860aa"
+  integrity sha512-BB8Wxg2m4cf70hY2EhdixFl+Qz9f9ncYT8bwdAufF6icjdiQTK5MO/XT+i6OEt3FAIP8EYvM8vQ+o0e7MtYnYg==
+  dependencies:
+    "@harmony-js-time/crypto" "0.1.58"
+    "@harmony-js-time/network" "0.1.58"
+    "@harmony-js-time/utils" "0.1.58"
+
+"@harmony-js-time/utils@0.1.58":
+  version "0.1.58"
+  resolved "https://registry.npmjs.org/@harmony-js-time/utils/-/utils-0.1.58.tgz#3013464464ff4b7e2243873c66100b7092410fe7"
+  integrity sha512-qPsq+SSsSUvq7QMReglam7FmSGD+I/uQH2ObQTyQWeWTMD59DVnC9F8jOsE28f64BX8G0wUgXofum5kUuwXXbw==
+  dependencies:
+    "@types/bn.js" "^4.11.3"
+    bn.js "^4.11.8"
+
 "@jest/types@^24.9.0":
   version "24.9.0"
   resolved "https://registry.npmjs.org/@jest/types/-/types-24.9.0.tgz#63cb26cb7500d069e5a389441a7c6ab5e909fc59"
