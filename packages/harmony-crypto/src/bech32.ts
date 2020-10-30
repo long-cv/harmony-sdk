@@ -128,8 +128,8 @@ export const bech32Decode = (bechString: string) => {
 };
 
 // HRP is the human-readable part of Harmony bech32 addresses
-export const HRP = 'time';
-export const tHRP = 'ttime';
+export const HRP = 'one';
+export const tHRP = 'tone';
 export const ONE_HRP = 'one';
 export const tONE_HRP = 'tone';
 
