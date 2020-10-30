@@ -179,10 +179,26 @@ export const isValidAddress = (address: string): boolean => {
   if (!isString(address)) {
     throw new Error(`${address} is not string`);
   }
-  if (isAddress(address) || isBech32Address(address) || isBech32TestNetAddress(address)) {
+  if (
+    isAddress(address) ||
+    isBech32Address(address) ||
+    isBech32TestNetAddress(address) ||
+    isBech32OneAddress(address) ||
+    isBech32TestNetOneAddress(address)
+  ) {
     return true;
   } else {
     return false;
   }
 };
 isValidAddress.validator = 'isValidAddress';
+
+export const isBech32OneAddress = (raw: string): boolean => {
+  return !!raw.match(/^one1[qpzry9x8gf2tvdw0s3jn54khce6mua7l]{38}/);
+};
+isBech32OneAddress.validator = 'isBech32OneAddress';
+
+export const isBech32TestNetOneAddress = (raw: string): boolean => {
+  return !!raw.match(/^tone1[qpzry9x8gf2tvdw0s3jn54khce6mua7l]{38}/);
+};
+isBech32TestNetOneAddress.validator = 'isBech32TestNetOneAddress';

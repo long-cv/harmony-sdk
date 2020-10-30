@@ -57,7 +57,7 @@ describe('test sign tranction', () => {
 
       expect(isValidAddress(address)).toEqual(true);
       expect(address).toEqual(vector.accountAddress);
-      expect(getAddress(address).bech32).toEqual(vector.accountBech32Address);
+      expect(getAddress(address).bech32One).toEqual(vector.accountBech32Address);
       expect(Transaction.normalizeAddress(getAddress(address).bech32)).toEqual(
         getAddress(address).checksum,
       );

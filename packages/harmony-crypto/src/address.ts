@@ -3,10 +3,16 @@
  * @module harmony-crypto
  */
 
-import { isAddress, isBech32Address, isBech32TestNetAddress } from '@harmony-js-time/utils';
+import {
+  isAddress,
+  isBech32Address,
+  isBech32TestNetAddress,
+  isBech32OneAddress,
+  isBech32TestNetOneAddress,
+} from '@harmony-js-time/utils';
 
 import { toChecksumAddress } from './keyTool';
-import { fromBech32, toBech32, HRP, tHRP } from './bech32';
+import { fromBech32, toBech32, HRP, tHRP, ONE_HRP, tONE_HRP } from './bech32';
 
 /**
  * ### How to use it?
@@ -58,7 +64,7 @@ export class HarmonyAddress {
    */
   static isValidBech32(str: string) {
     const toTest = new HarmonyAddress(str);
-    return toTest.raw === toTest.bech32;
+    return toTest.raw === toTest.bech32 || toTest.raw === toTest.bech32One;
   }
 
   /**
@@ -71,7 +77,7 @@ export class HarmonyAddress {
    */
   static isValidBech32TestNet(str: string) {
     const toTest = new HarmonyAddress(str);
-    return toTest.raw === toTest.bech32TestNet;
+    return toTest.raw === toTest.bech32TestNet || toTest.raw === toTest.bech32TestNetOne;
   }
 
   raw: string;
@@ -127,6 +133,30 @@ export class HarmonyAddress {
     return toBech32(this.basic, tHRP);
   }
 
+  /**
+   * @example
+   * ```
+   * const addr = 'one103q7qe5t2505lypvltkqtddaef5tzfxwsse4z7'
+   * const instance = new HarmonyAddress(addr);
+   * console.log(instance.bech32);
+   * ```
+   */
+  get bech32One() {
+    return toBech32(this.basic, ONE_HRP);
+  }
+
+  /**
+   * @example
+   * ```
+   * const addr = 'one103q7qe5t2505lypvltkqtddaef5tzfxwsse4z7'
+   * const instance = new HarmonyAddress(addr);
+   * console.log(instance.bech32TestNet);
+   * ```
+   */
+  get bech32TestNetOne() {
+    return toBech32(this.basic, tONE_HRP);
+  }
+
   constructor(raw: string) {
     this.raw = raw;
     this.basic = this.getBasic(this.raw);
@@ -149,6 +179,8 @@ export class HarmonyAddress {
     const basicBool = isAddress(addr);
     const bech32Bool = isBech32Address(addr);
     const bech32TestNetBool = isBech32TestNetAddress(addr);
+    const bech32OneBool = isBech32OneAddress(addr);
+    const bech32TestNetOneBool = isBech32TestNetOneAddress(addr);
 
     if (basicBool) {
       return addr.replace('0x', '').toLowerCase();
@@ -161,6 +193,16 @@ export class HarmonyAddress {
 
     if (bech32TestNetBool) {
       const fromB32TestNet = fromBech32(addr, tHRP);
+      return fromB32TestNet.replace('0x', '').toLowerCase();
+    }
+
+    if (bech32OneBool) {
+      const fromB32 = fromBech32(addr, ONE_HRP);
+      return fromB32.replace('0x', '').toLowerCase();
+    }
+
+    if (bech32TestNetOneBool) {
+      const fromB32TestNet = fromBech32(addr, tONE_HRP);
       return fromB32TestNet.replace('0x', '').toLowerCase();
     }
 

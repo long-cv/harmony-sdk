@@ -142,7 +142,7 @@
   },
   "name": "harmony-sdk-core",
   "dependencies": {
-    "@harmony-js-time/core": "^0.1.56",
+    "@harmony-js-time/core": "^0.1.57",
     "typedoc-plugin-internal-external": "^2.1.1"
   }
 }

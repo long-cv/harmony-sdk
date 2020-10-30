@@ -127,12 +127,14 @@ describe('test validator', () => {
   });
 
   it('test isBech32Address', () => {
-    expect(validators.isBech32Address('one1au4f9jectk52k24rnk9hjuygt22q2045wcpfdp')).toEqual(true);
+    expect(validators.isBech32OneAddress('one1au4f9jectk52k24rnk9hjuygt22q2045wcpfdp')).toEqual(
+      true,
+    );
     expect(validators.isBech32Address('xxx')).toEqual(false);
   });
   it('test isBech32Address', () => {
     expect(
-      validators.isBech32TestNetAddress('tone1au4f9jectk52k24rnk9hjuygt22q2045wcpfdp'),
+      validators.isBech32TestNetOneAddress('tone1au4f9jectk52k24rnk9hjuygt22q2045wcpfdp'),
     ).toEqual(true);
     expect(validators.isBech32TestNetAddress('xxx')).toEqual(false);
   });
