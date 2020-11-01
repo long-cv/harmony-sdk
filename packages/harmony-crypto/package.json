@@ -1,6 +1,6 @@
 {
   "name": "@harmony-js-time/crypto",
-  "version": "0.1.59-alpha.3+6764d3c",
+  "version": "0.1.59",
   "description": "crypto libraries for harmony",
   "main": "dist/index.js",
   "node": "dist/index.js",
@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@harmony-js-time/utils": "^0.1.59-alpha.3+6764d3c",
+    "@harmony-js-time/utils": "0.1.59",
     "aes-js": "^3.1.2",
     "bip39": "^2.5.0",
     "bn.js": "^4.11.8",
